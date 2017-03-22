@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body> 
+	<div id="full">
+		<textarea id="in"></textarea>  <br>
+		<button class="btn btn-primary" id="take">click To Enter the text</button>
+	</div>
+	<div id="other">
+		<textarea id="out"></textarea>
+		<button class="btn btn-primary" id="blue">click To change the color to blue</button>
+		<button class="btn btn-primary" id="green">click To change the color to green</button>
+		<button class="btn btn-primary" id="red">click To change the color to red</button>
+		<hr>
+		<button id="12">12 px</button>
+		<button id="22">22 px</button>
+		<button id="26">26 px</button>
+		<hr>
+		<input type="text" name="" id="befor">
+		<button class="btn btn-primary" id="pre"> add befor The text</button><br>
+		<input type="text" name="" id="after">
+		<button class="btn btn-primary" id="append"> add after The text</button>
+	</div>
+	<script>
+		$("#take").click(function(){
+			// $("#out").val($("#in").val());
+			$("#out").html($("#in").val());    
+
+			$("#in").val('')
+		})
+		$("#red").click(function(){
+			$("#out").css("color","red");
+		})
+		$("#green").click(function(){
+			$("#out").css("color","green");
+		})
+
+		$("#blue").click(function(){
+			$("#out").css("color","blue");
+		})
+		$("#12").click(function(){
+			$("#out").css("font-size","12px");
+		})
+		$("#22").click(function(){
+			$("#out").css("font-size","22px");
+		})
+		$("#26").click(function(){
+			$("#out").css("font-size","26px");
+		})
+		$("#pre").click(function(){
+			// console.log($("#befor").val())
+			// var str=$("#out").val();
+			// $('#out').val($("#befor").val()+str)
+			$("#out").prepend($("#befor").val());
+
+		})
+		$("#append").click(function(){
+			$("#out").append($("#after").val());
+		})
+	</script>
+</body>
+</html>

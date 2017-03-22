@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery-3.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+	<script src="code.js"></script>
+</head>
+<body>
+<div id="div"></div>
+<script type="text/x-handlebars-template" id="myfirstEtmplate">
+	<h1>{{title}}</h1>
+	<p>{{body}}</p>
+	<video src=""></video>
+   </script>
+   <script type="text/x-handlebars-template" id="secondTemplate">
+   <ul>
+   	{{#each item}}
+   	<li>{{name}} {{full_name}} {{owner.log}}</li>
+   	{{/each}}
+   </ul>
+   </script>
+</body>
+</html>

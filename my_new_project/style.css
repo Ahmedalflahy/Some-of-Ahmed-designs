@@ -1,0 +1,45 @@
+
+#full{
+	width: 500px;
+	height: 545px;
+	padding: 5px;
+	margin: 5px;
+	border: 3px;
+	border-style: solid;
+	float: left;
+	background-color: gray;
+	margin-top: 0;
+}
+#in{
+	width: 90%;
+	height: 400px;
+	padding-left: 10px;
+
+}
+#other{
+	width: 500px;
+	height: 545px;
+	padding: 5px;
+	margin: 5px;
+	border: 3px;
+	border-style: solid;
+	float: left;
+	background-color: green;
+	margin-top: 0;
+
+}
+#out{
+	width: 90%;
+	height: 400px;
+	padding-left: 10px;
+}
+#pre{
+
+}
+hr{
+	margin-top: px;
+	margin-bottom: 5px;
+}
+button{
+	margin:2px;
+}
